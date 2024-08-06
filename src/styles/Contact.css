@@ -1,0 +1,89 @@
+#contact{
+    padding-top: 90px;
+}
+
+
+#contact h1{
+    padding-bottom: 20px;
+     font-size: 35px;
+     text-decoration-line: underline;
+}
+
+.social-link{
+    color: #131913;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+ 
+}
+
+@keyframes slideUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 660px) {
+     .mains{
+      display: grid;
+      grid-template-columns: repeat(1, auto);
+      justify-content: center;
+     }
+  }
+
+  .mains-enter {
+    animation: slideUp 5s forwards;
+  }
+  
+@media (min-width: 660px){
+.mains{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+}
+}
+
+.social-git{
+    margin:30px 50px;
+    align-content: center;
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    color: #131913;
+}
+
+.social-linked{
+    align-content: center;
+    margin:30px 50px;
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    color: #131913;
+}
+
+.location{
+    margin:30px 50px;
+    align-content: center;
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    color: #131913;
+}
+
+.mail{
+    margin:30px 50px;
+    align-content: center;
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    color: #131913;
+}

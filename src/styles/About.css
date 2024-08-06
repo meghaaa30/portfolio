@@ -1,0 +1,135 @@
+
+@media(min-width: 880px){
+#about{
+    padding-top: 140px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+}
+
+@media (min-width: 880px)  {
+#about h1{
+    /* font-family: "Mirza", serif; */
+    padding: 0px 40px;
+     font-size: 40px;
+     text-decoration-line: underline;
+}
+.about{
+    display: none;
+}
+.image-layout img{
+    border-radius: 15px; 
+    width: 50%;
+    height: auto;  
+}
+.about-text p{
+    padding:15px 0px;
+    padding-left: 40px;
+    font-size: 25px;
+    
+}
+.resume{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+}
+
+
+@media (min-width: 1040px){
+.image-layout{
+    padding: 0 80px;
+}
+.about-text p{
+    font-size: 25px;
+}
+}
+
+.image-layout{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+@media (max-width: 880px){
+    #about{
+        padding-top: 100px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .image-layout{
+        flex-direction: column;
+    }
+
+    #about h1{
+        display: none;
+    }
+   
+    .about{
+        text-decoration-line: underline;
+        font-size: 50px;
+        padding-bottom: 30px;
+        font-weight: 700;
+    }
+    
+    .about-text p{
+        font-size: 20px;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .resume{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 880px) and (min-width:510px){
+    .image-layout img{
+        border-radius: 15px; 
+        width: 55%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 510px) and (min-width: 429px){
+    .image-layout img{
+        border-radius: 15px; 
+        width: 65%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 429px){
+     .image-layout img{
+        border-radius: 15px; 
+        margin: 0 auto;
+        width: 75%;
+     }
+     
+}
+
+.about-text{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.resume a{
+    text-decoration: none;
+    background-color:  white;
+    padding: 15px;
+    color:  rgb(5, 5, 66);
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* 
+.image-shadow {
+    
+    box-shadow: 10px 10px 5px  rgb(31, 31, 103);
+} */

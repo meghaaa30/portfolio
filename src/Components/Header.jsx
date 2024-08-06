@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import {HashLink as Link} from 'react-router-hash-link'
 
-function Header() {
+function Header(){
      
     const [isMenuOpen, setIsMenuOpen] = useState(false);
   
@@ -24,9 +24,8 @@ function Header() {
           <div className="header-left-4"></div>
          
           <div className="header-vertical-9"></div>
-          <button className="ButtonBase-root Button-text header-navButtons-3" onClick={closeMenu}><NavLink to="/">
-            <h5 className="Typography-root header-logo-text">Book-Blog</h5>
-          </NavLink></button>
+            <h5 className="Typography-root header-logo-text">Portfolio</h5>
+         
           <div className="header-empty-6"></div>
           <div className="header-space-8"></div>
           <button className="hamburger" onClick={toggleMenu}>
@@ -35,29 +34,24 @@ function Header() {
           <div className={`nav-links ${isMenuOpen ? 'open' : 'close'}`}>
             <hr className="nav-divider" />
             <button className="ButtonBase-root Button-root Button-text header-navButtons-3" onClick={closeMenu}>
-              <NavLink to="/home">Home</NavLink>
-            </button>
-            <hr className="nav-divider" />
-           
-            <button className="ButtonBase-root Button-root Button-text header-navButtons-3" onClick={closeMenu}>
-              <NavLink to="/about">About Me</NavLink>
+             <Link to='#home' smooth> Home </Link>
             </button>
             <hr className="nav-divider" />
             <button className="ButtonBase-root Button-root Button-text header-navButtons-3" onClick={closeMenu}>
-              <NavLink to="/project">Project</NavLink>
+            <Link to='#about' smooth>  About Me </Link>
+            </button>
+            <button className="ButtonBase-root Button-root Button-text header-navButtons-3" onClick={closeMenu}>
+             <Link to='#skills' smooth> Skills </Link>
             </button>
             <hr className="nav-divider" />
             <button className="ButtonBase-root Button-root Button-text header-navButtons-3" onClick={closeMenu}>
-              <NavLink to="/contact">Contact</NavLink>
+              <Link to='#project' smooth> Projects </Link>
             </button>
             <hr className="nav-divider" />
-              <>
-                <button
-                  className="ButtonBase-root Button-root Button-text header-navButtons-3"
-                  onClick={() => { closeMenu(); }}
-                >
-                </button>
-              </>
+            <button className="ButtonBase-root Button-root Button-text header-navButtons-3" onClick={closeMenu}>
+             <Link to='#contact' smooth> Contact </Link>
+            </button>
+
         
           </div>
         </div>

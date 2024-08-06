@@ -1,27 +1,33 @@
-import React from "react";
-import Header from "./Header";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React, { useState } from 'react';
+import Header from './Header';
 import Home from './Home';
-import Project from './Project'
-import Contact from './Contact'
-import About from './About'
+import About from './About';
+import Skills from './Skills'
+import Project from './Project';
+import Contact from './Contact';
+import '../styles/Home.css'
+import '../styles/About.css'
+import '../styles/Skills.css'
+import '../styles/Home.css'
+import '../styles/Project.css'
+import '../styles/Contact.css'
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
+
   return (
-    
-      <BrowserRouter>
-      <div className="App">
+    <BrowserRouter>
+    <div className="App">
       <Header />
-      <Routes>
-             
-              <Route path="/home" component={Home} />
-              <Route exact path="/about" component={About} />
-              <Route path="/contact" component={Contact} />
-              <Route path="/project" component={Project} />
-            </Routes>
-            </div>
-      </BrowserRouter>
-   
+      <div className="content">
+          <Home />
+          <About />
+          <Skills />
+          <Project />
+          <Contact />
+        </div>
+    </div>
+    </BrowserRouter>
   );
 }
 
