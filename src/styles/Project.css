@@ -14,9 +14,13 @@
         order: 2;
     }
 
-    .project-text{
+     .project-text h2{
         padding-top: 20px;
         text-align: center;
+     }
+    .project-text p{
+       
+        text-align: left;
        
     }
     .project-image-layout img {
