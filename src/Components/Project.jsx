@@ -11,7 +11,9 @@ function Project() {
             <h1>Project</h1>
             
             <div className='project-text'>
+              <a href='https://github.com/meghaaa30/Book-Blog/tree/megha' target='_blank' rel="noreferrer">
               <h2>Book-Blog</h2>
+              </a>
               <p>A book-review website made using MERN.
               Book-Blog provides an online portal where book enthusiasts can immerse themselves in a rich community of literary reviews. Readers can effortlessly search for reviews on their favorite books and explore a diverse array of opinions. Users can also contribute their own reviews, sharing their unique perspectives with others. Whether you're looking to discover new reads or share your thoughts on the latest bestseller, our platform offers a seamless and engaging experience for all.</p>
            </div>

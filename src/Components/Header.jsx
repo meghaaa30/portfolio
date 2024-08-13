@@ -23,8 +23,10 @@ function Header(){
         <div className="Toolbar-root Toolbar-regular header-appBar-13 Toolbar-gutters">
           <div className="header-left-4"></div>
          
-          <div className="header-vertical-9"></div>
+          <div className="header-vertical-4"></div>
+          <button className="ButtonBase-root Button-text header-navButtons-3"><Link to="#home">
             <h5 className="Typography-root header-logo-text">Portfolio</h5>
+          </Link></button>
          
           <div className="header-empty-6"></div>
           <div className="header-space-8"></div>

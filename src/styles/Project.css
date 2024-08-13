@@ -112,6 +112,7 @@
 }
 
 #project h2 {
+    text-decoration: underline;
     font-size: 40px;
     color: white;
 }

@@ -9,7 +9,7 @@ function Home() {
       const rect= homeSection.getBoundingClientRect();
       const windowHeight = window.innerHeight || document.documentElement.clientHeight;
       const elementHeight = rect.bottom - rect.top;
-       console.log('Top:', rect.top, 'Bottom:', rect.bottom); 
+     
        if (rect.top >= 0 && rect.bottom <= windowHeight) {
         // Element is fully in view
         setAnimate(true);
