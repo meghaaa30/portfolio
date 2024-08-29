@@ -9,7 +9,7 @@ import c from '../images/c++.png';
 import html from '../images/html.png';
 import css from '../images/css.png';
 import js from '../images/js.png';
-import sql from '../images/sql.png';
+import sql from '../images/mysql.png';
 
 const skillsData = [
   { src: Express, alt: 'ExpressJS', proficiency: 30 },
@@ -22,7 +22,7 @@ const skillsData = [
   { src: html, alt: 'HTML', proficiency: 85 },
   { src: css, alt: 'CSS', proficiency: 80 },
   { src: js, alt: 'JavaScript', proficiency: 75 },
-  { src: sql, alt: 'PostgreSQL', proficiency: 40 },
+  { src: sql, alt: 'MySQL', proficiency: 40 },
 ];
 
 function Skills() {
